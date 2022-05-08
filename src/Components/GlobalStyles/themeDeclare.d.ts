@@ -14,6 +14,7 @@ declare module '@material-ui/core/styles/createPalette' {
     accentColors: AccentPaletteColor;
     textOn: TextColor;
   }
+  
 };
 
 declare module '@mui/material/styles' {
