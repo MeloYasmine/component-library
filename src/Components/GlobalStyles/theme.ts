@@ -1,33 +1,32 @@
 import { createTheme } from "@mui/material/styles";
-import { Secondary } from "../../stories/Button.stories";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#0081A7',
+      main: process.env.COLOR_PRIMARY !== undefined ? process.env.COLOR_PRIMARY : '#0081A7',
     },
     secondary: {
-      main: '#bd6b73',
+      main: process.env.COLOR_SECONDARY !== undefined ? process.env.COLOR_SECONDARY : '#bd6b73',
     },
     text: {
-      primary: '#F9F1F1',
-      secondary: '#F9F1F1',
+      primary: process.env.TEXT_PRIMARY !== undefined ? process.env.TEXT_PRIMARY : '#F9F1F1',
+      secondary: process.env.TEXT_SECONDARY !== undefined ? process.env.SECONDARY : '#F9F1F1',
     },
     success: {
-      main: '#0aae59',
-      contrastText: '#F9F1F1',      
+      main: process.env.SUCCESS_MAIN !== undefined ? process.env.SUCCESS_MAIN : '#0aae59',
+      contrastText: process.env.SUCCESS_CONTRAST_TEXT!== undefined ? process.env.SUCCESS_CONTRAST_TEXT : '#F9F1F1',     
     },
     error: {
-      main: '#ff0a3b',
-      contrastText: '#F9F1F1',
+      main: process.env.ERROR_MAIN !== undefined ? process.env.ERROR_MAIN : '#ff0a3b',
+      contrastText: process.env.ERROR_CONTRAST_TEXT !== undefined ? process.env.ERROR_CONTRAST_TEXT : '#F9F1F1',
     },
     warning: {
-      main: '#BFCE12',
-      contrastText: '#F9F1F1',
+      main: process.env.WARNING_MAIN !== undefined ? process.env.WARNING_MAIN : '#BFCE12',
+      contrastText: process.env.WARNING_CONTRAST_TEXT !== undefined ? process.env.WARNING_CONTRAST_TEXT : '#F9F1F1',
     },
     info:{
-      main: '#5E79FD',
-      contrastText: '#F9F1F1',
+      main: process.env.INFO_MAIN !== undefined ? process.env.INFO_MAIN : '#5E79FD',
+      contrastText: process.env.INFO_CONTRAST_TEXT !== undefined ? process.env.INFO_CONTRAST_TEXT : '#F9F1F1',
     }
   },
 });

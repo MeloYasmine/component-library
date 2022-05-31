@@ -4,10 +4,8 @@ import { StyledEngineProvider, ThemeProvider as ThemeProviderMaterial } from '@m
 import { ThemeProvider as ThemeProviderEmotion } from '@emotion/react';
 import theme from './theme';
 
-
 interface Props {
-  children: JSX.Element[] | JSX.Element
-}
+  children: JSX.Element[] | JSX.Element}
 
 const ThemeProvider: React.FC<Props> = ({ children }) => (
   <StyledEngineProvider injectFirst>
