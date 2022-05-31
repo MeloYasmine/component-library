@@ -1,18 +1,21 @@
 import { Button } from './Components/Button';
 import { StyledEngineProvider } from '@mui/material';
 import { ThemeProvider } from './Components/GlobalStyles/ThemeProvider';
-import { StyledDiv } from './styles';
+import { Select } from './Components/Select';
+import { ButtonAppBar } from './Components/ButtonAppBar';
+
 
 
 function App() {
-  return (
-    
+  return (    
       <StyledEngineProvider injectFirst>
         <ThemeProvider >
+          <ButtonAppBar color='primary' />
           <Button color='primary' variant='contained'>BOTÃO</Button>
+          <br/>
+          <Select label='Value' value='VALUE' variant='outlined'></Select>
         </ThemeProvider>
-      </StyledEngineProvider>
-   
+      </StyledEngineProvider>   
   );
 }
 
