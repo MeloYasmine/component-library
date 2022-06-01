@@ -12,7 +12,7 @@ import { forwardRef } from 'react';
 export interface AppBarProps {
   color: "primary" | "secondary" | "inherit" | "default" | "transparent" | undefined
 }
-const ButtonAppBar = forwardRef((props: AppBarProps): JSX.Element => {
+const ButtonAppBar = ((props: AppBarProps): JSX.Element => {
   const{
     color,
   } = props;

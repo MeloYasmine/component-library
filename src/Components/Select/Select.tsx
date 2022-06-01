@@ -17,7 +17,7 @@ export interface SelectProps {
   }
 
   
-const Select = forwardRef((props: SelectProps): JSX.Element => {
+const Select = ((props: SelectProps): JSX.Element => {
       const {
         labelId,
         id,
