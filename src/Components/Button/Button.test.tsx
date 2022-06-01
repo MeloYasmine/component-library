@@ -7,7 +7,7 @@ describe('<Button/>', () => {
   it('should has an element children', () => {
     render(
         <Button color='primary'>
-          <span>BUTTON</span>
+          BUTTON
         </Button>
     );
     const buttonElementChildren = screen.getByText('BUTTON');

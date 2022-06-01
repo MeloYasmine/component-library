@@ -11,7 +11,7 @@ export interface ButtonProps {
   size?: 'small' | 'medium' | 'large';
 }
 
-const Button = forwardRef((props: ButtonProps): JSX.Element => {
+const Button = ((props: ButtonProps): JSX.Element => {
   const{
     children,
     color,
@@ -35,4 +35,3 @@ const Button = forwardRef((props: ButtonProps): JSX.Element => {
 });
 
 export { Button };
-Button.displayName = 'Button';
