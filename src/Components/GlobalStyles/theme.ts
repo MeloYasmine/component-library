@@ -3,29 +3,29 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: process.env.COLOR_PRIMARY !== undefined ? process.env.COLOR_PRIMARY : '#0081A7',
+      main: process.env.COLOR_PRIMARY !== undefined ? process.env.COLOR_PRIMARY : '#005975',
     },
     secondary: {
-      main: process.env.COLOR_SECONDARY !== undefined ? process.env.COLOR_SECONDARY : '#bd6b73',
+      main: process.env.COLOR_SECONDARY !== undefined ? process.env.COLOR_SECONDARY : '#734248',
     },
     text: {
       primary: process.env.TEXT_PRIMARY !== undefined ? process.env.TEXT_PRIMARY : '#F9F1F1',
       secondary: process.env.TEXT_SECONDARY !== undefined ? process.env.SECONDARY : '#F9F1F1',
     },
     success: {
-      main: process.env.SUCCESS_MAIN !== undefined ? process.env.SUCCESS_MAIN : '#0aae59',
+      main: process.env.SUCCESS_MAIN !== undefined ? process.env.SUCCESS_MAIN : '#025F2E',
       contrastText: process.env.SUCCESS_CONTRAST_TEXT!== undefined ? process.env.SUCCESS_CONTRAST_TEXT : '#F9F1F1',     
     },
     error: {
-      main: process.env.ERROR_MAIN !== undefined ? process.env.ERROR_MAIN : '#ff0a3b',
+      main: process.env.ERROR_MAIN !== undefined ? process.env.ERROR_MAIN : '#97031F',
       contrastText: process.env.ERROR_CONTRAST_TEXT !== undefined ? process.env.ERROR_CONTRAST_TEXT : '#F9F1F1',
     },
     warning: {
-      main: process.env.WARNING_MAIN !== undefined ? process.env.WARNING_MAIN : '#BFCE12',
-      contrastText: process.env.WARNING_CONTRAST_TEXT !== undefined ? process.env.WARNING_CONTRAST_TEXT : '#F9F1F1',
+      main: process.env.WARNING_MAIN !== undefined ? process.env.WARNING_MAIN : '#DCED31',
+      contrastText: process.env.WARNING_CONTRAST_TEXT !== undefined ? process.env.WARNING_CONTRAST_TEXT : '#000000',
     },
     info:{
-      main: process.env.INFO_MAIN !== undefined ? process.env.INFO_MAIN : '#5E79FD',
+      main: process.env.INFO_MAIN !== undefined ? process.env.INFO_MAIN : '#384AA1',
       contrastText: process.env.INFO_CONTRAST_TEXT !== undefined ? process.env.INFO_CONTRAST_TEXT : '#F9F1F1',
     }
   },
