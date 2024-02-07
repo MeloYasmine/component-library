@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To run the project.
+
+After cloning the project, open it in the IDE with React support of your choice. The author of the project used VSCode.
+
+Run the command to instal the dependencies:
+### `npm install` 
+
 ## Available Scripts
 
 In the project directory, you can run:
