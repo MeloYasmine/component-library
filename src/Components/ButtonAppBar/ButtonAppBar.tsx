@@ -11,10 +11,14 @@ import { forwardRef } from 'react';
 
 export interface AppBarProps {
   color: "primary" | "secondary" | "inherit" | "default" | "transparent" | undefined
+  buttonText?: string;
+  typographyText?: string;
 }
 const ButtonAppBar = ((props: AppBarProps): JSX.Element => {
   const{
     color,
+    typographyText,
+    buttonText,
   } = props;
 
   return (
@@ -34,9 +38,9 @@ const ButtonAppBar = ((props: AppBarProps): JSX.Element => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+          {typographyText ? typographyText : "News"}
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">{buttonText ? buttonText : "Login"}</Button>
         </Toolbar>
       </StyledAppBar>
     </Box>

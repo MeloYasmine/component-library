@@ -11,6 +11,14 @@ const meta: Meta = {
       control: { type: 'radio' },
       options: ['primary', 'secondary','success', 'error', 'info', 'warning'],
     },
+    buttonText: {
+      description: 'Text that will be displayed inside the button.',
+      control: 'text',
+    },
+    typographyText: {
+      description: 'Text that will be displayed inside the bar.',
+      control: 'text',
+    },
   },
 };
 
@@ -22,5 +30,7 @@ export const Default = Template.bind({});
 
 Default.args = {
     color: 'primary',
+    buttonText: 'button',
+    typographyText: 'Title',
 };
 

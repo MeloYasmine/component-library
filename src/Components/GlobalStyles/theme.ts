@@ -3,13 +3,13 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: process.env.COLOR_PRIMARY !== undefined ? process.env.COLOR_PRIMARY : '#005975',
+      main: process.env.COLOR_PRIMARY !== undefined ? process.env.COLOR_PRIMARY : '#FFFFFF',
     },
     secondary: {
       main: process.env.COLOR_SECONDARY !== undefined ? process.env.COLOR_SECONDARY : '#734248',
     },
     text: {
-      primary: process.env.TEXT_PRIMARY !== undefined ? process.env.TEXT_PRIMARY : '#F9F1F1',
+      primary: process.env.TEXT_PRIMARY !== undefined ? process.env.TEXT_PRIMARY : '#000000',
       secondary: process.env.TEXT_SECONDARY !== undefined ? process.env.SECONDARY : '#F9F1F1',
     },
     success: {
@@ -27,7 +27,7 @@ const theme = createTheme({
     info:{
       main: process.env.INFO_MAIN !== undefined ? process.env.INFO_MAIN : '#384AA1',
       contrastText: process.env.INFO_CONTRAST_TEXT !== undefined ? process.env.INFO_CONTRAST_TEXT : '#F9F1F1',
-    }
+    },
   },
 });
 

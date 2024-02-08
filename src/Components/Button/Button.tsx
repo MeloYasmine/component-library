@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {  forwardRef, MouseEventHandler }  from 'react';
+import {  MouseEventHandler }  from 'react';
 import { StyledButton } from './styles';
 
 export interface ButtonProps {

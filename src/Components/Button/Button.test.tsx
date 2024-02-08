@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Button } from './Button';
-// Avaliar o que está sendo retornado na chamada do teste screen.
+
 describe('<Button/>', () => {
   it('should has an element children', () => {
     render(
