@@ -4,18 +4,23 @@ import Stack from '@mui/material/Stack';
 import { StyledAvatar } from './styles';
 
 export interface LetterAvatarProps {
-    children: React.ReactNode;
+    children: string; // Alterado para aceitar apenas texto como criança
     variant?: 'rounded' | 'square' | 'circular' | undefined;
+    color?: string | undefined; // Nova prop para cor do texto
 }
 
 const LetterAvatar = ((props: LetterAvatarProps): JSX.Element => {
     const {
       children,
+      color,
+      variant,
     } = props;
 
   return (
     <Stack direction="row" spacing={2}>
-      <StyledAvatar>{children}</StyledAvatar>
+      <StyledAvatar color={color} variant={variant}>
+        {children}
+      </StyledAvatar>
     </Stack>
   );
 });

@@ -24,11 +24,6 @@ const meta: Meta = {
       description: 'Function to be executed when the link is clicked.',
       control: false,
     },
-    underline: {
-      description: 'Determines the behavior of the link underline.',
-      control: { type: 'radio' },
-      options: ['none', 'hover', 'always'],
-    },
   },
 };
 
@@ -42,5 +37,4 @@ Default.args = {
     children: 'Link',
     href: '#',
     color: 'primary',
-    underline: 'hover',
 };
